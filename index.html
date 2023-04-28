@@ -5,15 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WIDER WORLD</title>
+    <link href="./styles/general.css" rel="stylesheet">
+    <link href="./styles/buttons.css" rel="stylesheet">
+    <link href="./styles/forms.css" rel="stylesheet">
+    <link href="./styles/menu.css" rel="stylesheet">
+    <link href="./styles/texts.css" rel="stylesheet">
+    <title>WIDER WORLD | HOME</title>
 </head>
 
-<body>
+<body style="background:black;display: flex;flex-direction: column; gap: 25px;">
     <header>
+        <nav class="d-nav">
+            <img src="./img/logo_ww.png" alt="Logo Wider World">
+            <ul class="menu">
+                <li class="btn-menu-gallery txt-btn-menu-gallery">Galeria</li>
+                <li class="btn-menu-std txt-btn-menu-std">About Us</li>
+                <li class="btn-menu-std txt-btn-menu-std">Support</li>
+                <li class="btn-menu-std txt-btn-menu-std">FAQ</li>
+            </ul>
+            <button class="btn-my-account txt-btn-my-account">Mi Cuenta :)</button>
+            <img src="./img/avatar.png" alt="Imagen de tu cuenta">
+        </nav>
 
     </header>
-    <main>
-        <button id=""></button>
+    <main style="display: flex;flex-direction: column; gap: 25px;">
+        <section>
+            <button class="btn-buy-big txt-btn-buy-big">Comprar</button>
+        </section>
+        <section>
+            <button class="btn-buy-med txt-btn-buy-med">Comprar</button>
+        </section>
+
+        <section>
+            <button class="btn-buy-small txt-btn-buy-small">Comprar</button>
+        </section>
+
+        <section>
+            <input type="text" class="search-input" placeholder="Buscar">
+        </section>
+
+        <section>
+            <button class="btn-login txt-btn-login">Acceder</button>
+        </section>
+
+        <section>
+            <button class="btn-logout txt-btn-logout">Logout</button>
+        </section>
+
+        <section>
+            <select name="personajes" id="" class="dropdown-list">
+                <option value="picaso">Picasso</option>
+                <option value="areta-franklin">Aretta Franklin</option>
+                <option value="leonardo-davinci">Leonardo Davinci</option>
+                <option value="einstein">Einstein</option>
+            </select>
+        </section>
+        <section style="display: flex;flex-direction: column; gap: 25px;">
+            <p class="dark-p">Este es un texto oscuro</p>
+            <p class="recomended">Recomendado</p>
+            <p class="pack-name">Leonardo Da Vinci</p>
+        </section>
     </main>
     <footer>
 

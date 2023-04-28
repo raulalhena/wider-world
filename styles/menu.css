@@ -1,0 +1,53 @@
+.d-nav {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+/* BOTONES MENU */
+
+/* Menú DESKTOP*/
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    list-style-type: none;
+}
+
+/* Botón menú: galeria */
+.btn-menu-gallery {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    width: 85px;
+    height: 32px;
+    background: #CB77F6;
+    border: 1px solid #CB77F6;
+    border-radius: 6px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+/* Botón menú: standard */
+.btn-menu-std {
+    height: 32px;
+    width: 85.px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    width: 85.27px;
+    height: 32px;
+    background: #2C2C2C;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    border: double 1px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(#2C2C2C, #2C2C2C),
+        linear-gradient(91.06deg, #CB77F6 29.01%, #9CD82B 81.71%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+}

@@ -3,3 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+.logo {
+    width: 95px;
+    height: 48px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+}
