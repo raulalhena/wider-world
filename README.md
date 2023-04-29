@@ -56,7 +56,9 @@ Para crear los botones le asignamos un id para usarlo con css y javascript.
 
 ```
 
-    id = "btn-[NOMBRE_VISTA]-action"
+    id = "btn-[NOMBRE_VISTA]-[ACCION]"
+
+    Ej: btn-register-send
 
 ```
 
