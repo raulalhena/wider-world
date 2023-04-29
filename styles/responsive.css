@@ -1,5 +1,10 @@
 @media (min-width: 600px) {
 
+    /* Ocultamos elementos móvil */
+    .m-nav {
+        display: none;
+    }
+
     /* Configuración tamaño Desktop */
 
     /* Barra navegación */
