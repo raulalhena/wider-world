@@ -1,16 +1,6 @@
-## Elementos
-
-Creamos un archivo CSS por cada componente
-
-## Buttons
-
-Para crear los botones le asignamos un id para usarlo con css y javascript.
-
-id = "btn-[view]-action"
-
 ## Components
 
-Creados componentes para su uso en las diferentes vistas
+Creados componentes (clases CSS) para su uso en las diferentes vistas.
 
 ### Estructura
 
@@ -23,12 +13,6 @@ Creados componentes para su uso en las diferentes vistas
     |-js -> Directorio de los archivos de Javascript.
 
 ````
-
-#### js
-
-**_buttons.js:_**
-
-Código ejecutable de las acciones de los diferentes botones.
 
 #### styles
 
@@ -59,4 +43,20 @@ Estilo del menú de navegación para versión móvil.
 **_texts.css:_**
 
 Estilos de los diferentes textos.
+
+#### js
+
+**_buttons.js:_**
+
+Código ejecutable de las acciones de los diferentes botones.
+
+### Buttons
+
+Para crear los botones le asignamos un id para usarlo con css y javascript.
+
+```
+
+    id = "btn-[NOMBRE_VISTA]-action"
+
+```
 
