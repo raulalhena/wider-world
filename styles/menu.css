@@ -4,9 +4,8 @@
     bottom: 0;
     width: 100%;
     height: 30px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    border-top: 1px solid red;
+    padding: 5px 0px 10px 0;
+    border: 1px solid red;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -28,6 +27,7 @@
     height: 20px;
 }
 
+/* Icono de menú: galeria */
 .btn-menu-gallery img {
     width: 20px;
     height: 20px;
@@ -39,6 +39,7 @@
     height: 20px;
 }
 
+/* Icono de menú: estandard */
 .btn-menu-std img {
     width: 20px;
     height: 20px;

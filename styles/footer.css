@@ -5,6 +5,9 @@ footer {
 }
 
 .btn-footer {
-    font-size: 20px;
+    font-size: 12px;
     font-weight: regular;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
 }
