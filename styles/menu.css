@@ -1,0 +1,59 @@
+/*
+
+    ESTILOS MENUS WIDER WORLD
+
+*/
+
+/*******           
+** 
+    MENUS
+**
+*********/
+
+/* Barra navegación inferior */
+.m-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    margin-left: -10px;
+    border: 1px solid red;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 2000;
+    float: center;
+}
+
+/* Menú navegación */
+.m-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+/* Botón menú: galeria */
+.btn-menu-gallery {
+    width: 20px;
+    height: 20px;
+}
+
+/* Icono de menú: galeria */
+.btn-menu-gallery img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Botón menú: standard */
+.btn-menu-std {
+    width: 20px;
+    height: 20px;
+}
+
+/* Icono de menú: estandard */
+.btn-menu-std img {
+    width: 20px;
+    height: 20px;
+}

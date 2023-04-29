@@ -1,0 +1,104 @@
+/*
+
+    ESTILOS BOTONES WIDER WORLD
+
+*/
+
+/*******           
+** 
+    BOTONES 
+**
+*********/
+
+/* Botón mi cuenta */
+.btn-my-account {
+    width: 109.7px;
+    height: 32px;
+    border-radius: 6px;
+    background: #CB77F6;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding: 9px 25px;
+}
+
+/* Boton compra grande */
+.btn-buy-big {
+    height: 40px;
+    width: 162px;
+    border-radius: 6px;
+    background: #9CD82B;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding: 9px 41px;
+}
+
+/* Boton compra mediano */
+.btn-buy-med {
+    height: 20px;
+    width: 82px;
+    border-radius: 6px;
+    background: #9CD82B;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+    padding: 4px 19px;
+}
+
+/* Boton compra pequeño */
+.btn-buy-small {
+    height: 17px;
+    width: 69px;
+    border-radius: 6px;
+    background: #9CD82B;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6px;
+    color: #FFFFFF;
+    padding: 5px 21px;
+}
+
+/* Boton acceso */
+.btn-login {
+    height: 32px;
+    width: 114px;
+    border-radius: 6px;
+    background: #CB77F6;
+    border-radius: 6px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 8px 31px;
+}
+
+/* Boton cierre sesión */
+.btn-logout {
+    height: 22px;
+    width: 151px;
+    border-radius: 6px;
+    background: #E57D37;
+    opacity: 0.75;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    color: #fff;
+    padding: 3px 52px;
+}
+
+.btn-no-focus {
+    opacity: 0.5;
+}

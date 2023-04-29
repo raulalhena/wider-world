@@ -1,0 +1,23 @@
+/*
+
+    ESTILOS FOOTER WIDER WORLD
+
+*/
+
+/* Estilo general */
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+/* Estilo botones/enlaces */
+.btn-footer {
+    font-size: 12px;
+    font-weight: regular;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    padding: 0 15px 10px 15px;
+
+}
