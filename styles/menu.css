@@ -1,3 +1,15 @@
+/*
+
+    ESTILOS MENUS WIDER WORLD
+
+*/
+
+/*******           
+** 
+    MENUS
+**
+*********/
+
 /* Barra navegación inferior */
 .m-nav {
     position: fixed;
@@ -13,6 +25,7 @@
     float: center;
 }
 
+/* Menú navegación */
 .m-menu {
     width: 100%;
     display: flex;
@@ -20,7 +33,6 @@
     justify-content: space-evenly;
     list-style-type: none;
 }
-
 
 /* Botón menú: galeria */
 .btn-menu-gallery {

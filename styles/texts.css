@@ -1,18 +1,39 @@
+/*
+
+    ESTILOS TEXTOS WIDER WORLD
+
+*/
+
+/*******           
+** 
+    TEXTOS 
+**
+*********/
+
+/* Texto nombre del pack */
 .pack-name {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
     font-size: 12px;
     line-height: 14px;
-    /* or 117% */
-
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #FFFFFF;
 }
 
+/* Parrafo general claro */
+.light-p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+}
+
+/* Parrafo general oscuro */
 .dark-p {
     font-family: 'Montserrat';
     font-style: normal;
@@ -22,6 +43,8 @@
     color: #565656;
 }
 
+
+/* Texto de recomendado */
 .recomended {
     font-family: 'Montserrat';
     font-style: normal;

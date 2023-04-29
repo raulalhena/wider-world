@@ -1,3 +1,16 @@
+/*
+
+    ESTILOS FORMULARIOS WIDER WORLD
+
+*/
+
+/*******           
+** 
+    FORMULARIOS
+**
+*********/
+
+/* Input de busqueda  */
 .search-input {
     padding: 9px 2px;
     color: #7D7D7D;
@@ -11,10 +24,12 @@
     width: 343px;
 }
 
+/* Formato placeholder input de busqueda  */
 .search-input::placeholder {
     padding-left: 10px;
 }
 
+/* Formato placeholder input de busqueda  */
 .dropdown-list {
     height: 18px;
     width: 196px;

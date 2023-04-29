@@ -12,4 +12,10 @@ id = "btn-[view]-action"
 
 Creados componentes para su uso en las diferentes vistas
 
+### Archivos
+
+*_buttons.css:_* 
+
+Botones de uso general
+
 https://www.figma.com/file/LW4kZGdPNEoIwH4yjuQmGl/F5P7M-TravelAgencyG2?node-id=30-4&t=Uk4N6EsYIBprzw9R-0
