@@ -20,35 +20,35 @@ Creados componentes (clases CSS) para su uso en las diferentes vistas.
 
     Componentes con estilo igual en las diferentes vistas.
 
-**_buttons.css:_**
+- **_buttons.css:_**
 
-Botones de uso general.
+    Botones de uso general.
 
-**_desktop.css:_**
+- **_desktop.css:_**
 
-Estilo de la versión escritorio en pantallas superiores a 600px.
+    Estilo de la versión escritorio en pantallas superiores a 600px.
 
-**_forms.css:_**
+- **_forms.css:_**
 
-Estilos de los componentes de formulario
+    Estilos de los componentes de formulario
 
-**_footer.css:_**
+- **_footer.css:_**
 
-Estilos generales y de los componentes del pie de página.
+    Estilos generales y de los componentes del pie de página.
 
-**_menu.css:_**
+- **_menu.css:_**
 
-Estilo del menú de navegación para versión móvil.
+    Estilo del menú de navegación para versión móvil.
 
-**_texts.css:_**
+- **_texts.css:_**
 
-Estilos de los diferentes textos.
+    Estilos de los diferentes textos.
 
-#### js
+#### - js
 
-**_buttons.js:_**
+- **_buttons.js:_**
 
-Código ejecutable de las acciones de los diferentes botones.
+    Código ejecutable de las acciones de los diferentes botones.
 
 ### Buttons
 

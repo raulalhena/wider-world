@@ -22,6 +22,8 @@
     background-clip: padding-box, border-box;
     box-sizing: border-box;
     width: 343px;
+    color: #fff;
+    padding-left: 10px;
 }
 
 /* Formato placeholder input de busqueda  */
@@ -29,6 +31,24 @@
     padding-left: 10px;
 }
 
+/* Input de texto */
+.text-input {
+    width: 203px;
+    height: 32px;
+    background: rgba(125, 125, 125, 0.35);
+    border: 0px;
+    border-radius: 6px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+/* Formato placeholder input de texto general */
+.text-input::placeholder {
+    text-align: center;
+}
+
+
+/* NO APLICADO DISEÑO EXACTO DECIDIR SI ES DE UTILIDAD */
 /* Formato placeholder input de busqueda  */
 .dropdown-list {
     height: 18px;
