@@ -14,7 +14,7 @@ Creados componentes (clases CSS) para su uso en las diferentes vistas.
 
 ````
 
-####  *styles
+####  * styles
 
 **_general.css:_**
 
