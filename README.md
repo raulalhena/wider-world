@@ -12,12 +12,51 @@ id = "btn-[view]-action"
 
 Creados componentes para su uso en las diferentes vistas
 
-### Archivos
+### Estructura
+
+````
+
+    / -> Directorio raíz, ubicación HTML.
+    |-styles -> Directorio de las hojas de estilo CSS.
+    |-img -> Directorio de las imagenes.
+    |-icons -> Directorio de los iconos.
+    |-js -> Directorio de los archivos de Javascript.
+
+````
+
+#### js
+
+**_buttons.js:_**
+
+Código ejecutable de las acciones de los diferentes botones.
+
+#### styles
+
+**_general.css:_**
+
+Componentes con estilo igual en las diferentes vistas.
 
 **_buttons.css:_**
 
-Botones de uso general
+Botones de uso general.
 
+**_desktop.css:_**
 
+Estilo de la versión escritorio en pantallas superiores a 600px.
 
-https://www.figma.com/file/LW4kZGdPNEoIwH4yjuQmGl/F5P7M-TravelAgencyG2?node-id=30-4&t=Uk4N6EsYIBprzw9R-0
+**_forms.css:_**
+
+Estilos de los componentes de formulario
+
+**_footer.css:_**
+
+Estilos generales y de los componentes del pie de página.
+
+**_menu.css:_**
+
+Estilo del menú de navegación para versión móvil.
+
+**_texts.css:_**
+
+Estilos de los diferentes textos.
+
