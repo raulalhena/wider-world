@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+.d-nav {
+    display: none;
+}
+
 .logo {
     width: 95px;
     height: 48px;
