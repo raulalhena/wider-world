@@ -86,4 +86,8 @@
         font-style: normal;
         color: #A6A6A6;
     }
+    
+        body#login-page {
+            background-image: url("../assets/tarjetas/desktop-bg.png");
+        }
 }
