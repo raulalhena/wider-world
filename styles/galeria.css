@@ -48,8 +48,8 @@ header:after {
 }
 
 .logo img {
-    height: 70px;
-    width: 110px;
+    height: 48px;
+    width: 95px;
     margin-top: 5px;
 }
 
@@ -78,7 +78,7 @@ header:after {
     right: -1000px;
     background: #2c2c2c;
     width: 100%;
-    height: 20vh;
+    height: 100vh;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -237,90 +237,102 @@ header:after {
 /* Inicio sección main */
 
 main {
+    margin-top: 20px;
     height: 100vh;
     color: white;
+
 }
 
-/* Carrusel de packs de viaje */
+/* Inicio de galeria de packs */
 
 .carousel_container {
     width: 90%;
     margin: auto;
 }
 
-.recomended_packs {
-    margin-bottom: 20px;
+.carousel_main_container {
+    margin-bottom: 0px;
 }
 
-.recomended_packs .carousel_main_container {
+.recomended_packs .carousel_container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    position: relative;
+    width: 50%;
+    padding: 20px 0;
 }
 
 .recomended_packs .carousel_main_container .left_arrow,
 .recomended_packs .carousel_main_container .right_arrow {
+    display: none;
+}
+
+/* Inicio tarjetas de los packs */
+
+.card div {
+    position: relative;
+    width: 250px;
+    transition: all 0.3s ease;
+
+}
+
+.img-bg {
+    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.img-fg {
     position: absolute;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-size: 40px;
-    height: 50%;
-    top: calc(50% - 25%);
-    line-height: 40px;
-    width: 50px;
-    color: #fff;
-    z-index: 300;
-    transition: .2s ease all;
-}
-
-.recomended_packs .carousel_main_container .left_arrow {
+    width: 225px;
+    bottom: 0;
     left: 0;
-}
-
-.recomended_packs .carousel_main_container .right_arrow {
     right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: 0.3s ease;
+    opacity: 0;
 }
 
-.carousel_title_controllers {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+.card div:hover {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
 }
 
-.carousel_title_controllers .carousel_indicators {
-    background: #fff;
-    height: 3px;
-    width: 10px;
-    border: none;
-    margin-right: 2px;
-}
-
-.recomended_packs .carousel_container {
+.card div::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
     width: 100%;
-    padding: 20px 0;
-    overflow: hidden;
-    scroll-behavior: smooth;
+    background-image: linear-gradient(91.06deg,
+            #CB77F6 29.01%, #9CD82B 81.71%);
+    opacity: 0;
+    transition: all .3s ease;
 }
 
-.recomended_packs .carousel_container .carousel {
-    display: flex;
-    flex-wrap: nowrap;
+.card div:hover::before {
+    opacity: 1;
 
 }
 
-.recomended_packs .carousel_main_container .carousel_container .carousel .travel_pack {
-    min-width: 20%;
-    transition: .3 ease all;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+.card div:hover .img-fg {
+    opacity: 1;
+    transform: translateY(-2%);
+
+
 }
 
-.standingout_pack {
-    width: 25%;
+.card {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.recomended_packs .carousel_main_container .carousel_container .carousel .travel_pack img {
-    width: 100%;
-    vertical-align: top;
+.card .btn-buy-med {
+    margin: auto;
 }
 
 /* Inicio sección footer */
@@ -329,7 +341,6 @@ main {
     position: fixed;
     bottom: 0;
     width: 100%;
-
 }
 
 .footer__menu ul {
@@ -412,4 +423,91 @@ main {
         overflow: hidden;
         z-index: -10;
     }
+
+    /* Carrusel de packs de viaje */
+
+    .carousel_container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .recomended_packs .carousel_container {
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .recomended_packs {
+        margin-bottom: 20px;
+    }
+
+    .recomended_packs .carousel_main_container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .recomended_packs .carousel_main_container .left_arrow,
+    .recomended_packs .carousel_main_container .right_arrow {
+        display: block;
+        position: absolute;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 40px;
+        height: 50%;
+        top: calc(50% - 25%);
+        line-height: 40px;
+        width: 50px;
+        color: #fff;
+        z-index: 300;
+        transition: .2s ease all;
+    }
+
+    .recomended_packs .carousel_main_container .left_arrow {
+        left: 0;
+    }
+
+    .recomended_packs .carousel_main_container .right_arrow {
+        right: 0;
+    }
+
+    .carousel_title_controllers {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .carousel_title_controllers .carousel_indicators {
+        background: #fff;
+        height: 3px;
+        width: 10px;
+        border: none;
+        margin-right: 2px;
+    }
+
+    .recomended_packs .carousel_container {
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .recomended_packs .carousel_container .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+
+    .recomended_packs .carousel_main_container .carousel_container .carousel .travel_pack {
+        min-width: 20%;
+        transition: .3 ease all;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .recomended_packs .carousel_main_container .carousel_container .carousel .travel_pack img {
+        width: 100%;
+        vertical-align: top;
+    }
+
 }
