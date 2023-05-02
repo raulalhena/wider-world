@@ -14,6 +14,7 @@
 /* Fuentes generales */
 html {
     font-family: Montserrat;
+    background-color: #2C2C2C;
 }
 
 /* Header */
@@ -22,10 +23,10 @@ header {
 }
 
 /* Navegación */
-nav {
+/* nav {
     width: 100%;
-    padding: 10px 0 0 10px;
-}
+    padding: 20px 0 0 20px;
+} */
 
 /* Main */
 main {
