@@ -247,7 +247,7 @@
 */
 
 main .detalle-container {
-    border: 1px solid red;
+    border: 0px solid red;
     width: 100%;
     height: auto;
 }
@@ -364,29 +364,38 @@ main h1{
 
 .detail-text-container p{
     text-align:justify; 
-    font-size: 18px; 
+    font-size: 14px; 
     color: #A6A6A6;  
 }
 
 /* botones  */
 main .buttons {
-    border: 0px solid red;
+    border: 1px solid red;
     display:flex;
+    justify-content: center;
     margin-left:35px;
-    margin-right:35px;;
+    margin-right:35px;
 }
 
 .buttons .date-people {
-    border: 1px solid red;
+    border: 0px solid red;
     display: flex;
     flex-direction: row;
 }
 
-character
+.buttons .date-people input{
+    margin: 10px;
+}
+
+.buttons .date-people select{
+    margin: 10px;
+}
+
+/* botones drop down list*/
 
 .dropdown-list {
-  height: 18px;
-  width: 196px;
+  height: 20px;
+  width: 150px;
   border-radius: 6px;
   padding: 2px 0px 2px 5px;
   font-family: Montserrat;
@@ -397,4 +406,23 @@ character
   text-align: left;
   color: #7d7d7d;
   background-color: #2a2a2a;
+}
+
+.dropdown-list:hover{
+    color: #CB77F6;
+    font-weight: bold;
+}
+
+.btn-buy-med  {
+    height: 20px;
+    width: 82px;
+    border-radius: 6px;
+    background: #9CD82B;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+    padding: 4px 19px;
 }

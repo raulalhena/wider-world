@@ -14,7 +14,6 @@
     <link href="./styles/footer.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
     <link rel="stylesheet" href="../styles/detalle.css">
-    <link rel="stylesheet" href="../styles/buttons.css">
     <link rel="stylesheet" href="../styles/texts.css">
     <title>WIDER WORLD | HOME</title>
 </head>
@@ -27,11 +26,11 @@
             </div>
                 
             <input type="checkbox" id="check">
+            
             <label for="check" class="hamburger-btn">
                 <i class="fas fa-bars"></i>
             </label>
 
-            <!-- <div class="d-nav"> -->
             <ul class="d-menu">
                 <li> <a href="#perfil"> <img src="../img/avatar.png" class="avatar" alt="Imagen de tu cuenta"> </a> </li>
                 <li><a href="#galeria">Galeria</a></li> <!-- class="btn-menu-gallery" -->
@@ -40,17 +39,16 @@
                 <li><a href="#fqa">FQA</a></li> <!-- class="btn-menu-std" -->
                 <!-- <a href="" class="btn-my-account">Cuenta</a> -->
             </ul>
-           <!--  </div> -->
 
-            <!-- <div class="m-nav">
+            <div class="m-nav">
                 <ul class="m-menu">
-                    <a href="" class="btn-menu-std"><img src="./icons/hogar.png"></a>
-                    <a href="" class="btn-menu-std"><img src="./icons/loupe.png"></a>
-                    <a href="" class="btn-menu-gallery"><img src="./icons/salida.png"></a>
-                    <a href="" class="btn-menu-std"><img src="./icons/auriculares.png"></a>
-                    <a href="" class="btn-menu-std"><img src="./icons/preguntas-mas-frecuentes.png"></a>
+                    <a href="#" class="btn-menu-std">Nosotros</a>
+                    <a href="#" class="btn-menu-gallery">Galeria</a>
+                    <a href="#" class="btn-menu-std"><img src=""></a> <!-- boton home -->
+                    <a href="#" class="btn-menu-std">Soporte</a>
+                    <a href="#" class="btn-menu-std">FAQ</a>
                 </ul>
-            </div> -->
+            </div>
         </nav>
     </header>
 
@@ -73,24 +71,25 @@
         
         <section class="buttons">
             <div class="date-people">
-                <input type="number" class="dropdown-list" placeholder="Cantidad de personas">
-                
-                <input type="date" class="dropdown-list" placeholder="fecha">
-            </div>
+                <div>
+                    <input type="number" class="dropdown-list" placeholder="Cantidad de personas">  
+                    <input type="date" class="dropdown-list" placeholder="fecha">
+                </div>
 
+                <div>
+                    <select name="personajes" id="" class="dropdown-list">
+                    <option value="picasso">Picasso</option>
+                    <option value="paulo_picasso_hijo">Paulo Picasso hijo</option>
+                    <option value="georges_braque">Georges Braque</option>
+                    <option value="marie-thérèse-walter">Marie-Thérèse Walter</option>
+                </div>  
 
-            <div class="character">
-                <select name="personajes" id="" class="dropdown-list">
-                <option value="picasso">Picasso</option>
-                <option value="paulo_picasso_hijo">Paulo Picasso hijo</option>
-                <option value="georges_braque">Georges Braque</option>
-                 <option value="marie-thérèse-walter">Marie-Thérèse Walter</option>
-            </div>
-
-            <div>
-                <a href="" class="btn-buy-big">Comprar</a>
+                <div>
+                    <a href="">Comprar</a>
+                </div> 
             </div>
         </section>
+        
 <!--     <section>
             <a href="" class="btn-buy-med txt-btn-buy-med">Comprar</a>
         </section>
@@ -136,13 +135,14 @@
             <p class="pack-name">Leonardo Da Vinci</p>
         </section>
     </main>
+-->
     <footer>
         <a href="" class="btn-footer">Contacto</a>
         <a href="" class="btn-footer">Donde estamos</a>
         <a href="" class="btn-footer">Terminos del servicio</a>
         <a href="" class="btn-footer">Otra opcion</a>
         <a href="" class="btn-footer">Una mas</a>
-    </footer> -->
+    </footer> 
 </body>
 <script src="./js/buttons.js">
 </script>
