@@ -38,7 +38,7 @@
     }
     
     .d-menu {
-        border: 2px solid blueviolet;
+        border: 0px solid blueviolet;
         position: relative;
         height: 50%;
         top: 20px;
@@ -121,7 +121,7 @@
 }
 
 
-
+/* ////////////////////////////////// */
 /* menu */
 /*
 
@@ -238,6 +238,7 @@
     height: 20px;
 }
 
+/* ////////////////////////////////// */
 /* general */
 /*
 
@@ -332,5 +333,38 @@ a {
     border: 0px solid red;
     width: 45px;
     height: 45px;
-    
+}
+
+/* Imagen picasso detalle*/
+.image {
+    border: 0px solid red;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: right;
+    object-fit:cover;
+    margin-top: 0;
+}
+
+img{
+    width: 80%;
+}
+
+main h1{
+    font-weight: normal;
+    font-size: 30px;
+    color: #A6A6A6;
+    text-align: center;
+}
+
+.detail-text-container {
+    border: 0px solid red;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+}
+
+.detail-text-container p{
+    text-align:justify; 
+    font-size: 18px; 
+    color: #A6A6A6;  
 }
