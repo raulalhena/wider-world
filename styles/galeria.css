@@ -28,14 +28,7 @@ header {
     z-index: 2;
 }
 
-header:after {
-    content: '';
-    clear: both;
-    display: block;
-}
-
 .header-content {
-    max-width: 1200px;
     margin: 20px;
     display: flex;
     justify-content: space-between;
@@ -371,6 +364,9 @@ main {
 */
 
 @media (min-width: 800px) {
+
+
+
     .bars__menu {
         display: none;
     }
