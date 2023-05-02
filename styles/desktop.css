@@ -5,6 +5,7 @@
 */
 
 /* Configuración formato DESKTOP por encima de los 600px */
+
 @media (min-width: 600px) {
 
     /* Ocultamos elementos móvil */
@@ -88,19 +89,28 @@
     }
 
 
+    body#login-page {
+        background-image: url("../assets/tarjetas/desktop-bg.png");
+    }
 
-#hero video {
-    height: auto;
+
+
+
+    #hero video {
+        height: auto;
+
+
+    }
+
+
+
+
+
+
+    body#login-page {
+        background-image: url("../assets/tarjetas/desktop-bg.png");
+    }
 
 
 }
 
-
-  
-
-    
-        body#login-page {
-            background-image: url("../assets/tarjetas/desktop-bg.png");
-        }
-
-}
