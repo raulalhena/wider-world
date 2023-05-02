@@ -89,18 +89,19 @@
 
 
 
-#hero video {
-    height: auto;
+    #hero video {
+        height: auto;
+
+
+    }
+
+
+
+
+
+    body#login-page {
+        background-image: url("../assets/tarjetas/desktop-bg.png");
+    }
 
 
 }
-
-
-  
-
-    
-        body#login-page {
-            background-image: url("../assets/tarjetas/desktop-bg.png");
-        }
-
-
