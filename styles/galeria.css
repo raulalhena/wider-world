@@ -251,7 +251,11 @@ main {
 }
 
 .carousel_main_container {
-    margin-bottom: 0px;
+    margin-bottom: 100px;
+}
+
+.carousel_title_controllers .carousel_indicators {
+    display: none;
 }
 
 .recomended_packs .carousel_container {
