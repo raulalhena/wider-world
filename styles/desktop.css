@@ -86,8 +86,21 @@
         font-style: normal;
         color: #A6A6A6;
     }
+
+
+
+#hero video {
+    height: auto;
+
+
+}
+
+
+  
+
     
         body#login-page {
             background-image: url("../assets/tarjetas/desktop-bg.png");
         }
-}
+
+
