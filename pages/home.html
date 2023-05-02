@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/styles/desktop.css" />
     <link rel="stylesheet" href="/styles/forms.css" />
     <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="../styles/galeria.css" />
 
     <title>Home</title>
   </head>
@@ -25,16 +26,16 @@
     </section>
     <main>
       <div id="container-search">
-        <input type="text" class="search-input" placeholder="Explorar viajes" />
+        <a href="./galeria.html" class="btn-menu-std"> Ver galeria </a>
       </div>
-    </main>
+    
     <section id="container-cards">
       <div>
-        <h3>Lo mas vistos</h3>
+        <h3>Más vistos</h3>
         <div class="card-list">
           <div class="card">
             <div>
-              <a href="#">
+              <a href="./detalle.html">
                 <img
                   class="img-bg"
                   src="../assets/tarjetas/picasso1.png"
@@ -53,7 +54,7 @@
 
           <div class="card">
             <div>
-              <a href="#">
+              <a href="./detalle.html">
                 <img
                   class="img-bg"
                   src="../assets/tarjetas/aretha1.png"
@@ -66,13 +67,13 @@
                 />
               </a>
             </div>
-            <p>Picasso</p>
+            <p>Aretha</p>
             <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
           </div>
 
           <div class="card">
             <div>
-              <a href="#">
+              <a href="./detalle.html">
                 <img
                   class="img-bg"
                   src="../assets/tarjetas/einstein1.png"
@@ -85,13 +86,13 @@
                 />
               </a>
             </div>
-            <p>Picasso</p>
+            <p>Einstein</p>
             <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
           </div>
 
           <div class="card">
             <div>
-              <a href="#">
+              <a href="./detalle.html">
                 <img
                   class="img-bg"
                   src="../assets/tarjetas/reina1.png"
@@ -104,29 +105,109 @@
                 />
               </a>
             </div>
-            <p>Picasso</p>
+            <p>Isabel</p>
             <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
           </div>
-          <!-- <div class="card">
-                    <img class="img-bg" src="../assets/tarjetas/aretha1.png" alt="picasso">
-                    <img class="img-fg" src="../assets/tarjetas/aretha2.png" alt="picasso perfil">
-                    <p>Aretha</p>
-                </div>
-                <div class="card">
-                    <img class="img-bg" src="../assets/tarjetas/einstein1.png" alt="picasso">
-                    <img class="img-fg" src="../assets/tarjetas/einstein2.png" alt="picasso perfil">
-                    <p>Einstein</p>
-                </div>
-                <div class="card">
-                    <img class="img-bg" src="../assets/tarjetas/reina1.png" alt="picasso">
-                    <img class="img-fg" src="../assets/tarjetas/reina2.png" alt="picasso perfil">
-                    <p>Isabel</p>
-                </div> -->
         </div>
       </div>
-      <div>
-        <h3>Personajes Historicos</h3>
-      </div>
     </section>
+  </section>
+  
+  <section id="container-cards">
+    <div>
+      <h3>Personajes historicos</h3>
+      <div class="card-list">
+        <div class="card">
+          <div>
+            <a href="./detalle.html">
+              <img
+                class="img-bg"
+                src="../assets/tarjetas/picasso1.png"
+                alt="picasso"
+              />
+              <img
+                class="img-fg"
+                src="../assets/tarjetas/picasso2.png"
+                alt="picasso perfil"
+              />
+            </a>
+          </div>
+          <p>Picasso</p>
+          <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+        </div>
+
+        <div class="card">
+          <div>
+            <a href="./detalle.html">
+              <img
+                class="img-bg"
+                src="../assets/tarjetas/aretha1.png"
+                alt="picasso"
+              />
+              <img
+                class="img-fg"
+                src="../assets/tarjetas/aretha2.png"
+                alt="picasso perfil"
+              />
+            </a>
+          </div>
+          <p>Aretha</p>
+          <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+        </div>
+
+        <div class="card">
+          <div>
+            <a href="./detalle.html">
+              <img
+                class="img-bg"
+                src="../assets/tarjetas/einstein1.png"
+                alt="picasso"
+              />
+              <img
+                class="img-fg"
+                src="../assets/tarjetas/einstein2.png"
+                alt="picasso perfil"
+              />
+            </a>
+          </div>
+          <p>Einstein</p>
+          <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+        </div>
+
+        <div class="card">
+          <div>
+            <a href="./detalle.html">
+              <img
+                class="img-bg"
+                src="../assets/tarjetas/reina1.png"
+                alt="picasso"
+              />
+              <img
+                class="img-fg"
+                src="../assets/tarjetas/reina2.png"
+                alt="picasso perfil"
+              />
+            </a>
+          </div>
+          <p>Isabel</p>
+          <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+    <footer>
+      <menu class="footer__menu">
+        <ul>
+          <li><a href="./galeria.html">Galeria</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li>
+            <a href="#"> <img src="../icons/Vector@2x.svg" alt="" /> </a>
+          </li>
+          <li><a href="#">Soporte</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </menu>
+    </footer>
   </body>
 </html>
