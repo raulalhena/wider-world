@@ -14,6 +14,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    margin: 20px 0 0 20px;
     width: 100%;
     background-color: #2c2c2c;
     box-shadow: 0 4px 25px -22px black;
@@ -23,7 +24,6 @@ header {
 
 .header-content {
     max-width: 1200px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -52,13 +52,11 @@ header {
     position: absolute;
     top: 0%;
     left: 70%;
-    border: 2px solid pink;
 }
 
 .avatar img {
     height: 70px;
     margin-top: 5px;
-    border: 3px solid red;
 }
 
 .menu nav {
@@ -126,7 +124,7 @@ header {
 */
 
 .activeline1__bars-menu {
-    transform: rotate(45deg) translate(-6px, 1px);
+    transform: rotate(45deg) translate(-5px, 1px);
 }
 
 .activeline2__bars-menu {
@@ -135,7 +133,88 @@ header {
 }
 
 .activeline3__bars-menu {
-    transform: rotate(-45deg) translate(-4px, 2px);
+    transform: rotate(-45deg) translate(-5px, 3px);
+}
+
+/* Botón menú: galeria */
+.btn-menu-gallery {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    width: 85px;
+    height: 32px;
+    background: #CB77F6;
+    border: 1px solid #CB77F6;
+    border-radius: 6px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* Botón menú: standard */
+.btn-menu-std {
+    height: 32px;
+    width: 85.px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    width: 85.27px;
+    height: 32px;
+    background: #2C2C2C;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    border: double 1px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(#2C2C2C, #2C2C2C),
+        linear-gradient(91.06deg, #CB77F6 29.01%, #9CD82B 81.71%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #A6A6A6;
+}
+
+.search_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search_gallery input {
+    width: 70%;
+    max-width: 1000px;
+}
+
+.search-input {
+    padding: 9px 2px;
+    color: #7d7d7d;
+    border: double 3px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(#2c2c2c, #2c2c2c),
+        linear-gradient(91.06deg, #cb77f6 29.01%, #9cd82b 81.71%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    width: 343px;
+    color: #fff;
+    padding-left: 10px;
 }
 
 /* 
@@ -144,14 +223,13 @@ header {
 
 */
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .bars__menu {
         display: none;
     }
 
     .avatar__menu {
         display: flex;
-        border: 1px solid #ff22cc;
         gap: 0px;
         position: static;
     }
@@ -162,7 +240,6 @@ header {
         height: 100%;
         top: 0;
         right: 0;
-        border: 2px solid blue;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -179,9 +256,8 @@ header {
 
     .menu nav ul li {
         height: 100%;
-        margin: 0 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 85px;
+        margin: 0 20px;
+
     }
 }
