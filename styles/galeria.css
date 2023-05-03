@@ -230,7 +230,7 @@ header {
 /* Inicio sección main */
 
 main {
-    margin-top: 20px;
+    margin: 20px;
     height: 100vh;
     color: white;
 
@@ -238,29 +238,38 @@ main {
 
 /* Inicio de galeria de packs */
 
-.carousel_inner_container {
+.carousel_container {
     width: 90%;
     margin: auto;
+    margin-bottom: 300px;
 }
 
-.carousel_main_container {
-    margin-bottom: 100px;
+.carousel_inner_container .card {
+    margin-bottom: 50px;
 }
 
-.carousel_title_controllers .carousel_indicators {
-    display: none;
-}
-
-.recomended_packs .carousel_inner_container {
+.recomended_packs .carousel_main_container .carousel_inner_container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 100%;
     padding: 20px 0;
+    margin-bottom: 300px;
 }
 
 .recomended_packs .carousel_main_container .left_arrow,
 .recomended_packs .carousel_main_container .right_arrow {
+    display: none;
+}
+
+.recomended_packs .carousel_title_controls h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.recomended_packs .carousel_title_controls .carousel_indicators {
     display: none;
 }
 
@@ -331,6 +340,10 @@ main {
     margin: auto;
 }
 
+.card .btn-buy-big {
+    margin: auto;
+}
+
 /* Inicio sección footer */
 
 .footer__menu {
@@ -358,6 +371,47 @@ main {
     font-weight: 700;
 }
 
+/* Botones */
+
+/* Boton compra grande */
+.btn-buy-big {
+    height: 40px;
+    width: 162px;
+    border-radius: 6px;
+    background: #9CD82B;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding: 12px 41px;
+}
+
+/* Boton compra mediano */
+.btn-buy-med {
+    height: 20px;
+    width: 82px;
+    border-radius: 6px;
+    background: #9CD82B;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+    padding: 4px 19px;
+}
+
+/* Texto de recomendado */
+.recomended {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
 
 
 /* 
@@ -426,14 +480,14 @@ main {
     /* Carrusel de packs de viaje */
 
     .carousel_container {
-        width: 90%;
-        margin: auto;
+        width: 95%;
+
     }
 
-    .recomended_packs .carousel_inner_container {
+    .recomended_packs .carousel_main_container .carousel_inner_container {
         width: 100%;
         padding: 20px 0;
-        overflow-x: scroll;
+        overflow: hidden;
         scroll-behavior: smooth;
         white-space: nowrap;
     }
@@ -441,7 +495,6 @@ main {
     .recomended_packs .carousel_main_container .carousel_inner_container .carousel {
         display: flex;
         flex-wrap: nowrap;
-
     }
 
     .recomended_packs .carousel_main_container .carousel_inner_container .carousel .travel_pack {
@@ -453,6 +506,54 @@ main {
     .recomended_packs .carousel_main_container .carousel_inner_container .carousel .travel_pack img {
         width: 100%;
         vertical-align: top;
+    }
+
+    .carousel_title_controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .recomended_packs .carousel_title_controls .carousel_indicators {
+        display: block;
+    }
+
+    .carousel_title_controls .carousel_indicators button {
+        background: #fff;
+        height: 3px;
+        width: 10px;
+        border: none;
+        margin-right: 2px;
+    }
+
+    .recomended_packs .carousel_main_container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .recomended_packs .carousel_main_container .left_arrow,
+    .recomended_packs .carousel_main_container .right_arrow {
+        display: block;
+        position: absolute;
+        border: none;
+        background: rgba(255, 255, 255, 0.2);
+        font-size: 40px;
+        height: 30%;
+        top: calc(30% - 25%);
+        line-height: 40px;
+        width: 50px;
+        color: #fff;
+        z-index: 500;
+        transition: .2 ease all;
+    }
+
+    .recomended_packs .carousel_main_container .left_arrow {
+        left: 0;
+    }
+
+    .recomended_packs .carousel_main_container .right_arrow {
+        right: 0;
     }
 
 }

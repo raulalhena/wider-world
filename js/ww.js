@@ -17,7 +17,6 @@ const showMenu = () => {
     if (document.getElementById("nav").style.right === "0px") {
         document.getElementById("nav").style.right = "-1000px";
     } else {
-        console.log(document.getElementById("nav").style.right)
         document.getElementById("nav").style.right = "0px";
     }
 
@@ -45,7 +44,11 @@ const leftArrow = document.getElementById("left-arrow");
 const rightArrow = document.getElementById("right-arrow");
 
 rightArrow.addEventListener("click", () => {
+    row.scrollLeft += row.offsetWidth;
+});
 
+leftArrow.addEventListener("click", () => {
+    row.scrollLeft -= row.offsetWidth;
 })
 
 
