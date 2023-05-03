@@ -514,7 +514,7 @@ main {
         overflow: hidden;
         z-index: -10;
     }
-}
+
 
     /* Carrusel de packs recomendados */
 
@@ -686,5 +686,4 @@ main {
     .artists_packs .carousel_main_container .right_arrow {
         right: 0;
     }
-
 }
