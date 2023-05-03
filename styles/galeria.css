@@ -34,13 +34,13 @@ header {
     justify-content: space-between;
 }
 
-.logo img {
+.header-content .logo img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo img {
+.header-content .logo img {
     height: 48px;
     width: 95px;
     margin-top: 5px;
@@ -238,6 +238,7 @@ main {
 
 /* Inicio de galeria de packs */
 
+/* Packs recomendados */
 .carousel_container {
     width: 90%;
     margin: auto;
@@ -254,7 +255,7 @@ main {
     align-items: center;
     width: 100%;
     padding: 20px 0;
-    margin-bottom: 300px;
+    margin-bottom: 20px;
 }
 
 .recomended_packs .carousel_main_container .left_arrow,
@@ -270,6 +271,42 @@ main {
 
 
 .recomended_packs .carousel_title_controls .carousel_indicators {
+    display: none;
+}
+
+/* Packs artistas */
+.carousel_container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 300px;
+}
+
+.carousel_inner_container .card {
+    margin-bottom: 50px;
+}
+
+.artists_packs .carousel_main_container .carousel_inner_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.artists_packs .carousel_main_container .left_arrow,
+.artists_packs .carousel_main_container .right_arrow {
+    display: none;
+}
+
+.artists_packs .carousel_title_controls h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.artists_packs .carousel_title_controls .carousel_indicators {
     display: none;
 }
 
@@ -346,17 +383,10 @@ main {
 
 /* Inicio sección footer */
 
-footer {
-    /* background-color: linear-gradient(0deg, blue, pink); */
-
-}
-
 .footer__menu {
     position: fixed;
     bottom: 0;
     width: 100%;
-    /* background-color: linear-gradient(0deg, blue, pink); */
-
 }
 
 .footer__menu ul {
@@ -485,7 +515,7 @@ footer {
         z-index: -10;
     }
 
-    /* Carrusel de packs de viaje */
+    /* Carrusel de packs recomendados */
 
     .carousel_container {
         width: 95%;
@@ -570,6 +600,89 @@ footer {
     }
 
     .recomended_packs .carousel_main_container .right_arrow {
+        right: 0;
+    }
+
+
+    /* Packs artistas */
+    .artists_packs .carousel_main_container .carousel_inner_container {
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .artists_packs .carousel_main_container .carousel_inner_container .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .artists_packs .carousel_main_container .carousel_inner_container .carousel .travel_pack {
+        width: 20%;
+        margin-left: 15px;
+        transition: .3 ease all;
+        border: none;
+    }
+
+    .artists_packs .carousel_main_container .carousel_inner_container .carousel .travel_pack img {
+        width: 100%;
+        vertical-align: top;
+        box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 60px;
+    }
+
+    .carousel_title_controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .artists_packs .carousel_title_controls .carousel_indicators {
+        display: block;
+        cursor: pointer;
+    }
+
+    .carousel_title_controls .carousel_indicators button {
+        background: #fff;
+        height: 3px;
+        width: 10px;
+        border: none;
+        margin-right: 2px;
+    }
+
+    .carousel_title_controls .carousel_indicators button:hover,
+    .carousel_title_controls .carousel_indicators button.indicator_active {
+        background: #ff0000;
+    }
+
+    .artists_packs .carousel_main_container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .artists_packs .carousel_main_container .left_arrow,
+    .artists_packs .carousel_main_container .right_arrow {
+        display: block;
+        position: absolute;
+        border: none;
+        background: rgba(100, 100, 100, 0.2);
+        font-size: 40px;
+        height: 35%;
+        top: calc(28% - 25%);
+        line-height: 40px;
+        width: 50px;
+        color: #fff;
+        z-index: 500;
+        transition: .2 ease all;
+        cursor: pointer;
+    }
+
+    .artists_packs .carousel_main_container .left_arrow {
+        left: 0;
+    }
+
+    .artists_packs .carousel_main_container .right_arrow {
         right: 0;
     }
 
