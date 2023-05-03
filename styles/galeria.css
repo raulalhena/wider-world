@@ -238,7 +238,7 @@ main {
 
 /* Inicio de galeria de packs */
 
-.carousel_container {
+.carousel_inner_container {
     width: 90%;
     margin: auto;
 }
@@ -251,7 +251,7 @@ main {
     display: none;
 }
 
-.recomended_packs .carousel_container {
+.recomended_packs .carousel_inner_container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -430,81 +430,27 @@ main {
         margin: auto;
     }
 
-    .recomended_packs .carousel_container {
+    .recomended_packs .carousel_inner_container {
         width: 100%;
         padding: 20px 0;
-        overflow: hidden;
+        overflow-x: scroll;
         scroll-behavior: smooth;
+        white-space: nowrap;
     }
 
-    .recomended_packs {
-        margin-bottom: 20px;
-    }
-
-    .recomended_packs .carousel_main_container {
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-
-    .recomended_packs .carousel_main_container .left_arrow,
-    .recomended_packs .carousel_main_container .right_arrow {
-        display: block;
-        position: absolute;
-        border: none;
-        background-color: rgba(0, 0, 0, 0.3);
-        font-size: 40px;
-        height: 50%;
-        top: calc(50% - 25%);
-        line-height: 40px;
-        width: 50px;
-        color: #fff;
-        z-index: 300;
-        transition: .2s ease all;
-    }
-
-    .recomended_packs .carousel_main_container .left_arrow {
-        left: 0;
-    }
-
-    .recomended_packs .carousel_main_container .right_arrow {
-        right: 0;
-    }
-
-    .carousel_title_controllers {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-    }
-
-    .carousel_title_controllers .carousel_indicators {
-        background: #fff;
-        height: 3px;
-        width: 10px;
-        border: none;
-        margin-right: 2px;
-    }
-
-    .recomended_packs .carousel_container {
-        width: 100%;
-        padding: 20px 0;
-        overflow: hidden;
-        scroll-behavior: smooth;
-    }
-
-    .recomended_packs .carousel_container .carousel {
+    .recomended_packs .carousel_main_container .carousel_inner_container .carousel {
         display: flex;
         flex-wrap: nowrap;
 
     }
 
-    .recomended_packs .carousel_main_container .carousel_container .carousel .travel_pack {
+    .recomended_packs .carousel_main_container .carousel_inner_container .carousel .travel_pack {
         min-width: 20%;
         transition: .3 ease all;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
 
-    .recomended_packs .carousel_main_container .carousel_container .carousel .travel_pack img {
+    .recomended_packs .carousel_main_container .carousel_inner_container .carousel .travel_pack img {
         width: 100%;
         vertical-align: top;
     }
