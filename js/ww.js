@@ -39,16 +39,52 @@ document.getElementById("bars_menu").addEventListener("click", showMenu);
 
 */
 const row = document.querySelector(".carousel_inner_container");
-const packs = document.querySelector(".travel_pack");
+const packs = document.querySelectorAll(".travel_pack");
 const leftArrow = document.getElementById("left-arrow");
 const rightArrow = document.getElementById("right-arrow");
 
 rightArrow.addEventListener("click", () => {
     row.scrollLeft += row.offsetWidth;
+
+    const activeIndicator = document.querySelector(".carousel_indicators .indicator_active");
+    if (activeIndicator.nextSibling) {
+        activeIndicator.nextSibling.classList.add("indicator_active");
+        activeIndicator.nextSibling.classList.remove("indicator_active");
+    }
 });
 
 leftArrow.addEventListener("click", () => {
     row.scrollLeft -= row.offsetWidth;
-})
+
+    const activeIndicator = document.querySelector(".carousel_indicators .indicator_active");
+    console.log("izq indicador: ", activeIndicator)
+    if (activeIndicator.previousSibling) {
+        activeIndicator.previousSibling.classList.add("indicator_active");
+        activeIndicator.previousSibling.classList.remove("indicator_active");
+    }
+});
 
 
+/*
+
+    Control de paginación del carrusel
+
+*/
+
+const numberPages = Math.ceil(packs.length / 5);
+for (let i = 0; i < numberPages; i++) {
+    const indicator = document.createElement("button");
+
+    if (i === 0) {
+        indicator.classList.add("indicator_active");
+        console.log("i = 0", indicator.classList)
+    }
+
+    document.querySelector(".carousel_indicators").appendChild(indicator);
+    indicator.addEventListener("click", (e) => {
+        row.scrollLeft = i * row.offsetWidth;
+
+        document.querySelector(".carousel_indicators .indicator_active").classList.remove("indicator_active");
+        e.target.classList.add("indicator_active");
+    });
+}
