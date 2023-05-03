@@ -537,10 +537,10 @@ main {
         display: block;
         position: absolute;
         border: none;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(100, 100, 100, 0.2);
         font-size: 40px;
-        height: 30%;
-        top: calc(30% - 25%);
+        height: 35%;
+        top: calc(28% - 25%);
         line-height: 40px;
         width: 50px;
         color: #fff;
