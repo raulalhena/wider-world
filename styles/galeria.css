@@ -1,0 +1,690 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
+html {
+    background-color: #181818;
+}
+
+.hidden_block {
+    content: '';
+    visibility: hidden;
+    z-index: -100;
+    height: 180px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #181818;
+    box-shadow: 0 4px 25px -22px black;
+    height: 80px;
+    z-index: 2;
+}
+
+.header-content {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content .logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content .logo img {
+    height: 48px;
+    width: 95px;
+    margin-top: 5px;
+}
+
+.menu {
+    height: 80px;
+}
+
+.avatar__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 0%;
+    left: 70%;
+}
+
+.avatar img {
+    height: 70px;
+    margin-top: 5px;
+}
+
+.menu nav {
+  
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    background: #2c2c2c;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: all 100ms;
+}
+
+.menu nav ul {
+    flex-direction: column;
+    list-style-type: none;
+}
+
+/* ID para menú seleccionado */
+
+#selected {
+    font-weight: 700;
+}
+
+.menu nav ul li {
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+.menu nav ul li:before {
+    content: "";
+    width: 100%;
+    height: 4px;
+}
+
+.bars__menu {
+    margin-top: 40px;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+}
+
+.bars__menu span {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 4px;
+    background-color: #CB77F6;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+/* 
+    ANTES DE JS
+.bars__menu:active .line1__bars-menu {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+*/
+
+.activeline1__bars-menu {
+    transform: rotate(45deg) translate(-5px, 1px);
+}
+
+.activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-5px, 3px);
+}
+
+/* Botón menú: galeria */
+.btn-menu-gallery {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    width: 85px;
+    height: 32px;
+    background: #CB77F6;
+    border: 1px solid #CB77F6;
+    border-radius: 6px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* Botón menú: standard */
+.btn-menu-std {
+    height: 32px;
+    width: 85.px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    width: 85.27px;
+    height: 32px;
+    background: #2C2C2C;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    border: double 1px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(#2C2C2C, #2C2C2C),
+        linear-gradient(91.06deg, #CB77F6 29.01%, #9CD82B 81.71%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #A6A6A6;
+}
+
+.search_gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search_gallery input {
+    width: 70%;
+    max-width: 1000px;
+}
+
+.search-input {
+    padding: 9px 2px;
+    color: #7d7d7d;
+    border: double 3px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(#2c2c2c, #2c2c2c),
+        linear-gradient(91.06deg, #cb77f6 29.01%, #9cd82b 81.71%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-sizing: border-box;
+    width: 343px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.video_box {
+    display: none;
+}
+
+/* Inicio sección main */
+
+main {
+    margin: 20px;
+    height: 100vh;
+    color: white;
+
+}
+
+/* Inicio de galeria de packs */
+
+/* Packs recomendados */
+.carousel_container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 300px;
+}
+
+.carousel_inner_container .card {
+    margin-bottom: 50px;
+}
+
+.recomended_packs .carousel_main_container .carousel_inner_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.recomended_packs .carousel_main_container .left_arrow,
+.recomended_packs .carousel_main_container .right_arrow {
+    display: none;
+}
+
+.recomended_packs .carousel_title_controls h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.recomended_packs .carousel_title_controls .carousel_indicators {
+    display: none;
+}
+
+/* Packs artistas */
+.carousel_container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 300px;
+}
+
+.carousel_inner_container .card {
+    margin-bottom: 50px;
+}
+
+.artists_packs .carousel_main_container .carousel_inner_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.artists_packs .carousel_main_container .left_arrow,
+.artists_packs .carousel_main_container .right_arrow {
+    display: none;
+}
+
+.artists_packs .carousel_title_controls h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.artists_packs .carousel_title_controls .carousel_indicators {
+    display: none;
+}
+
+/* Inicio tarjetas de los packs */
+
+.card div {
+    position: relative;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.img-bg {
+    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.img-fg {
+    position: absolute;
+    width: 225px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.card div:hover {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+.card div::before {
+    content: “”;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom,
+            transparent 10%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0) 95%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0px -8px 4px #000000);
+    border-radius: 3rem;
+}
+
+.card div:hover::before {
+    opacity: 1;
+}
+
+.card div:hover .img-fg {
+    opacity: 1;
+    transform: translateY(-2%);
+}
+
+.card {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.card .btn-buy-med {
+    margin: auto;
+}
+
+.card .btn-buy-big {
+    margin: auto;
+}
+
+/* Inicio sección footer */
+
+.footer__menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    background-image: linear-gradient(0deg, rgba(44, 44, 44, 1), rgba(44, 44, 44, 0) 80%);
+}
+
+.footer__menu ul li {
+    margin: 20px;
+}
+
+.footer__menu ul li a {
+    text-decoration: none;
+    color: #CB77F6;
+    width: 44px;
+    height: 14px;
+    font-weight: 700;
+}
+
+/* Botones */
+
+/* Boton compra grande */
+.btn-buy-big {
+    height: 40px;
+    width: 162px;
+    border-radius: 6px;
+    background: #9CD82B;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding: 12px 41px;
+}
+
+/* Boton compra mediano */
+.btn-buy-med {
+    height: 20px;
+    width: 82px;
+    border-radius: 6px;
+    background: #9CD82B;
+    border-radius: 6px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+    padding: 4px 19px;
+}
+
+/* Texto de recomendado */
+.recomended {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+
+/* 
+
+    DESKTOP
+
+*/
+
+@media (min-width: 800px) {
+
+
+
+    .bars__menu {
+        display: none;
+    }
+
+    .avatar__menu {
+        display: flex;
+        gap: 0px;
+        position: static;
+    }
+
+    .menu nav {
+        display: flex;
+        position: initial;
+        height: 100%;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        transition: all 100ms;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .menu nav ul {
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu nav ul li {
+        height: 100%;
+        width: 85px;
+        margin: 0 20px;
+
+    }
+
+    .video_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 220%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        z-index: -10;
+    }
+
+
+    /* Carrusel de packs recomendados */
+
+    .carousel_container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .recomended_packs .carousel_main_container .carousel_inner_container {
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .recomended_packs .carousel_main_container .carousel_inner_container .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .recomended_packs .carousel_main_container .carousel_inner_container .carousel .travel_pack {
+        width: 20%;
+        margin-left: 15px;
+        transition: .3 ease all;
+        border: none;
+    }
+
+    .recomended_packs .carousel_main_container .carousel_inner_container .carousel .travel_pack img {
+        width: 100%;
+        vertical-align: top;
+        box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 60px;
+    }
+
+    .carousel_title_controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .recomended_packs .carousel_title_controls .carousel_indicators {
+        display: block;
+        cursor: pointer;
+    }
+
+    .carousel_title_controls .carousel_indicators button {
+        background: #fff;
+        height: 3px;
+        width: 10px;
+        border: none;
+        margin-right: 2px;
+    }
+
+    .carousel_title_controls .carousel_indicators button:hover,
+    .carousel_title_controls .carousel_indicators button.indicator_active {
+        background: #ff0000;
+    }
+
+    .recomended_packs .carousel_main_container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .recomended_packs .carousel_main_container .left_arrow,
+    .recomended_packs .carousel_main_container .right_arrow {
+        display: block;
+        position: absolute;
+        border: none;
+        background: rgba(100, 100, 100, 0.2);
+        font-size: 40px;
+        height: 35%;
+        top: calc(28% - 25%);
+        line-height: 40px;
+        width: 50px;
+        color: #fff;
+        z-index: 500;
+        transition: .2 ease all;
+        cursor: pointer;
+    }
+
+    .recomended_packs .carousel_main_container .left_arrow {
+        left: 0;
+    }
+
+    .recomended_packs .carousel_main_container .right_arrow {
+        right: 0;
+    }
+
+
+    /* Packs artistas */
+    .artists_packs .carousel_main_container .carousel_inner_container {
+        width: 100%;
+        padding: 20px 0;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .artists_packs .carousel_main_container .carousel_inner_container .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .artists_packs .carousel_main_container .carousel_inner_container .carousel .travel_pack {
+        width: 20%;
+        margin-left: 15px;
+        transition: .3 ease all;
+        border: none;
+    }
+
+    .artists_packs .carousel_main_container .carousel_inner_container .carousel .travel_pack img {
+        width: 100%;
+        vertical-align: top;
+        box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 60px;
+    }
+
+    .carousel_title_controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .artists_packs .carousel_title_controls .carousel_indicators {
+        display: block;
+        cursor: pointer;
+    }
+
+    .carousel_title_controls .carousel_indicators button {
+        background: #fff;
+        height: 3px;
+        width: 10px;
+        border: none;
+        margin-right: 2px;
+    }
+
+    .carousel_title_controls .carousel_indicators button:hover,
+    .carousel_title_controls .carousel_indicators button.indicator_active {
+        background: #ff0000;
+    }
+
+    .artists_packs .carousel_main_container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .artists_packs .carousel_main_container .left_arrow,
+    .artists_packs .carousel_main_container .right_arrow {
+        display: block;
+        position: absolute;
+        border: none;
+        background: rgba(100, 100, 100, 0.2);
+        font-size: 40px;
+        height: 35%;
+        top: calc(28% - 25%);
+        line-height: 40px;
+        width: 50px;
+        color: #fff;
+        z-index: 500;
+        transition: .2 ease all;
+        cursor: pointer;
+    }
+
+    .artists_packs .carousel_main_container .left_arrow {
+        left: 0;
+    }
+
+    .artists_packs .carousel_main_container .right_arrow {
+        right: 0;
+    }
+}

@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../assets/fuentes/Montserrat-Regular.otf");
+}
+
+body#login-page {
+  background-image: url("../assets/tarjetas/mobile-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.backdrop {
+  background-color: rgb(244 240 239 / 23%);
+  width: 100%;
+  height: 100svh;
+  backdrop-filter: blur(4px);
+  position: absolute;
+  top: 0;
+}
+
+section.login {
+  position: relative;
+  z-index: 2;
+}
+
+nav {
+  position: sticky;
+  left: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+ul>* {
+  flex: 1 0;
+}
+
+.container {
+  max-width: 320px;
+  margin-inline: auto;
+  background: #494848;
+  border-radius: 12px;
+  color: white;
+  position: relative;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding-top: 20px;
+}
+
+.container img {
+  width: 100px;
+  display: block;
+  margin-inline: auto;
+}
+
+.form {
+  display: flex;
+  flex-flow: row nowrap;
+  scroll-snap-type: x;
+}
+
+#login,
+#register {
+  position: sticky;
+  flex: 1 0 100%;
+  width: 100%;
+  left: 0;
+  scroll-snap-align: center;
+}
+
+#login div,
+#register div {
+  padding-inline: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+nav a:active {
+  color: green;
+}
+
+nav ul {
+  padding: 0 20px;
+  display: flex;
+}
+
+.btn-reset {
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+}
+
+.btn-reset:nth-child(2),
+button.btn-login {
+  background-color: #9CD82B;
+}
+
+nav li,
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login {
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+nav a,
+button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+button.btn-login {
+  border: transparent;
+  width: 90%;
+  padding: 10px 20px;
+}
+
+#register div {
+  align-items: center;
+  margin-bottom: 20px;
+}

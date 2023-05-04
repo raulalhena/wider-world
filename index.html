@@ -2,103 +2,190 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/general.css" rel="stylesheet">
-    <link href="./styles/buttons.css" rel="stylesheet">
-    <link href="./styles/forms.css" rel="stylesheet">
-    <link href="./styles/menu.css" rel="stylesheet">
-    <link href="./styles/texts.css" rel="stylesheet">
-    <link href="./styles/desktop.css" rel="stylesheet">
-    <link href="./styles/footer.css" rel="stylesheet">
-    <title>WIDER WORLD | HOME</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/styles/home.css" />
+  <link rel="stylesheet" href="/styles/general.css" />
+  <link rel="stylesheet" href="/styles/desktop.css" />
+  <link rel="stylesheet" href="/styles/forms.css" />
+  <link rel="stylesheet" href="/styles/buttons.css" />
+  <link rel="stylesheet" href="/styles/galeria.css" />
+
+  <title>Home</title>
 </head>
+<header>
 
-<body style="background:black;display: flex;flex-direction: column; gap: 25px;">
-    <header>
-        <nav style="display:flex;justify-content: space-between;">
-            <img src="./img/logo_ww.png" class="logo" alt="Logo Wider World">
-            <div class="d-nav">
-                <ul class="d-menu">
-                    <li class="btn-menu-gallery">Galeria</li>
-                    <li class="btn-menu-std">About Us</li>
-                    <li class="btn-menu-std">Support</li>
-                    <li class="btn-menu-std">FAQ</li>
-                </ul>
-            </div>
-            <div class="m-nav">
-                <ul class="m-menu">
-                    <a href="" class="btn-menu-std"><img src="./icons/hogar.png"></a>
-                    <a href="" class="btn-menu-std"><img src="./icons/loupe.png"></a>
-                    <a href="" class="btn-menu-gallery"><img src="./icons/salida.png"></a>
-                    <a href="" class="btn-menu-std"><img src="./icons/auriculares.png"></a>
-                    <a href="" class="btn-menu-std"><img src="./icons/preguntas-mas-frecuentes.png"></a>
-                </ul>
-            </div>
-            <a href="" class="btn-my-account">Cuenta</a>
-            <img src="./img/avatar.png" class="avatar" alt="Imagen de tu cuenta">
+  <div class="header-content">
+
+    <div class="logo">
+      <img src="/img/logo_ww.png" alt="Wider World">
+    </div>
+    <div class="avatar__menu">
+
+      <div class="avatar">
+        <img src="/img/avatar.png" alt="Tu avatar">
+      </div>
+      <div class="menu">
+        <nav id="nav">
+          <ul>
+            <li><a class="btn-menu-gallery" href="/pages/galeria.html" id="selected">Galeria</a></li>
+            <li><a class="btn-menu-std" href="/pages/aboutus.html">AboutUs</a></li>
+            <li><a class="btn-menu-std" href="#">Support</a></li>
+            <li><a class="btn-menu-std" href="/pages/login.html">Iniciar sesión</a></li>
+          </ul>
         </nav>
+      </div>
 
-    </header>
-    <main>
-        <section>
-            <a href="" class="btn-buy-big">Comprar</a>
-        </section>
-        <section>
-            <a href="" class="btn-buy-med txt-btn-buy-med">Comprar</a>
-        </section>
+      <div class="bars__menu" id="bars_menu">
+        <span class="line1__bars-menu">
 
-        <section>
-            <a href="" class="btn-buy-small txt-btn-buy-small">Comprar</a>
-        </section>
+        </span>
+        <span class="line2__bars-menu">
 
-        <section>
-            <input type="text" class="search-input" placeholder="Buscar">
-        </section>
+        </span>
+        <span class="line3__bars-menu">
 
-        <section>
-            <input type="text" class="text-input" placeholder="email">
-        </section>
-        <section>
-            <input type="text" class="text-input" placeholder="contraseña">
-        </section>
+        </span>
+      </div>
+    </div>
 
-        <section>
-            <a href="" class="btn-login txt-btn-login">Acceder</a>
-        </section>
+  </div>
+</header>
 
-        <section>
-            <a href="" class="btn-login txt-btn-login btn-no-focus">Acceder</a>
-        </section>
+<body id="home">
+  <section id="hero">
+    <div class="backdrop"></div>
+    <video autoplay muted loop id="myVideo">
+      <source src="/assets/video/vh.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-text">
+      <h1>UNA VIDA, UN VIAJE</h1>
+    </div>
+  </section>
+  <main>
+    <div id="container-search">
+      <a href="/pages/galeria.html" class="btn-menu-std"> Ver galeria </a>
+    </div>
 
-        <section>
-            <a href="" class="btn-logout txt-btn-logout">Logout</a>
-        </section>
+    <section id="container-cards">
+      <div>
+        <h3>Más vistos</h3>
+        <div class="card-list">
+          <div class="card">
+            <div>
+              <a href="/pages/detalle.html">
+                <img class="img-bg" src="/assets/tarjetas/picasso1.png" alt="picasso" />
+                <img class="img-fg" src="/assets/tarjetas/picasso2.png" alt="picasso perfil" />
+              </a>
+            </div>
+            <p>Picasso</p>
+            <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+          </div>
 
-        <section>
-            <select name="personajes" id="" class="dropdown-list">
-                <option value="picaso">Picasso</option>
-                <option value="areta-franklin">Aretta Franklin</option>
-                <option value="leonardo-davinci">Leonardo Davinci</option>
-                <option value="einstein">Einstein</option>
-            </select>
-        </section>
-        <section style="display: flex;flex-direction: column; gap: 25px;">
-            <p class="dark-p">Este es un texto oscuro</p>
-            <p class="recomended">Recomendado</p>
-            <p class="pack-name">Leonardo Da Vinci</p>
-        </section>
-    </main>
-    <footer>
-        <a href="" class="btn-footer">Contacto</a>
-        <a href="" class="btn-footer">Donde estamos</a>
-        <a href="" class="btn-footer">Terminos del servicio</a>
-        <a href="" class="btn-footer">Otra opcion</a>
-        <a href="" class="btn-footer">Una mas</a>
-    </footer>
+          <div class="card">
+            <div>
+              <a href="/pages/detalle.html">
+                <img class="img-bg" src="/assets/tarjetas/aretha1.png" alt="picasso" />
+                <img class="img-fg" src="/assets/tarjetas/aretha2.png" alt="picasso perfil" />
+              </a>
+            </div>
+            <p>Aretha</p>
+            <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+          </div>
+
+          <div class="card">
+            <div>
+              <a href="/pages/detalle.html">
+                <img class="img-bg" src="/assets/tarjetas/einstein1.png" alt="picasso" />
+                <img class="img-fg" src="/assets/tarjetas/einstein2.png" alt="picasso perfil" />
+              </a>
+            </div>
+            <p>Einstein</p>
+            <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+          </div>
+
+          <div class="card">
+            <div>
+              <a href="/pages/detalle.html">
+                <img class="img-bg" src="/assets/tarjetas/reina1.png" alt="picasso" />
+                <img class="img-fg" src="/assets/tarjetas/reina2.png" alt="picasso perfil" />
+              </a>
+            </div>
+            <p>Isabel</p>
+            <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <section id="container-cards">
+      <div>
+        <h3>Personajes historicos</h3>
+        <div class="card-list">
+          <div class="card">
+            <div>
+              <a href="/pages/detalle.html">
+                <img class="img-bg" src="/assets/tarjetas/picasso1.png" alt="picasso" />
+                <img class="img-fg" src="/assets/tarjetas/picasso2.png" alt="Picasso perfil" />
+              </a>
+            </div>
+            <p>Picasso</p>
+            <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+          </div>
+
+          <div class="card">
+            <div>
+              <a href="/pages/detalle.html">
+                <img class="img-bg" src="/assets/tarjetas/aretha1.png" alt="picasso" />
+                <img class="img-fg" src="/assets/tarjetas/aretha2.png" alt="picasso perfil" />
+              </a>
+            </div>
+            <p>Aretha</p>
+            <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+          </div>
+
+          <div class="card">
+            <div>
+              <a href="/pages/detalle.html">
+                <img class="img-bg" src="../assets/tarjetas/einstein1.png" alt="picasso" />
+                <img class="img-fg" src="../assets/tarjetas/einstein2.png" alt="picasso perfil" />
+              </a>
+            </div>
+            <p>Einstein</p>
+            <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+          </div>
+
+          <div class="card">
+            <div>
+              <a href="/pages/detalle.html">
+                <img class="img-bg" src="../assets/tarjetas/reina1.png" alt="picasso" />
+                <img class="img-fg" src="../assets/tarjetas/reina2.png" alt="picasso perfil" />
+              </a>
+            </div>
+            <p>Isabel</p>
+            <a href="#" class="btn-buy-med txt-btn-buy-med">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <menu class="footer__menu">
+      <ul>
+        <li><a href="/pages/galeria.html">Galeria</a></li>
+        <li><a href="/pages/aboutus.html">Nosotros</a></li>
+        <li>
+          <a href="#"> <img src="/icons/Vector@2x.svg" alt="Wider World" /> </a>
+        </li>
+        <li><a href="#">Soporte</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </menu>
+  </footer>
 </body>
-<script src="./js/buttons.js">
-</script>
-</html>
 
+</html>
+""

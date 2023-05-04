@@ -99,6 +99,7 @@
     padding: 3px 52px;
 }
 
+/* Boton sin foco */
 .btn-no-focus {
     opacity: 0.5;
 }

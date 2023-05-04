@@ -62,3 +62,9 @@ Para crear los botones le asignamos un id para usarlo con css y javascript.
 
 ```
 
+### Margenes
+
+Prueba
+
+
+
